@@ -164,23 +164,27 @@ img {
     list-style: none;
 }
 
-.widget-couse {
+.widget-course {
     border-bottom: 1px solid var(--grey);
     margin-bottom: 2rem;
 }
-.widget-couse:last-of-type {
+.widget-course:last-of-type {
     border: none;
     margin-bottom: 0;
 }
-.widget-course__label {
+.widget-course__label,
+.course__label {
     font-family: var(--fontHeading);
     font-weight: bold;
 }
-.widget-course__info {
+.widget-course__info,
+.course__info {
     font-weight: normal;
 }
 .widget-course__label,
-.widget-course__info {
+.widget-course__info,
+.course__label,
+.course__info {
     font-size: 2rem;
 }
 
@@ -210,4 +214,21 @@ img {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
     }
+}
+
+
+/** Cursos (para no dupilcar codigo label e info está declarado en el bloque header)**/
+.course {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--grey);
+}
+@media (min-width : 768px) {
+    .course {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+.course:last-of-type {
+    border: none;
 }
