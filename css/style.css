@@ -114,3 +114,10 @@ img {
     color: var(--white);
 }
 
+@media (min-width : 768px) {
+    .main-contain {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
