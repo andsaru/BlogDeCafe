@@ -19,7 +19,7 @@
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="preload" href="img/blog1.jpg" as="image">
+    <!-- Se quita si tiene soporte de webp <link rel="preload" href="img/blog1.jpg" as="image">-->
 
 </head>
 <body>
@@ -54,7 +54,7 @@
             <article class="intro">
                 <div class="intro__image">
                     <picture>
-                        <source srcset="img/blog1.webp" type="image/webp">
+                        <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
                         <img loading="lazy" src="img/blog1.jpg" alt="imagen blog">
                     </picture>
                 </div>
@@ -71,7 +71,7 @@
             <article class="intro">
                 <div class="intro__image">
                     <picture>
-                        <source srcset="img/blog2.webp" type="image/webp">
+                        <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
                         <img loading="lazy" src="img/blog2.jpg" alt="imagen blog">
                     </picture>
                 </div>
@@ -87,7 +87,7 @@
 
             <article class="intro">
                 <picture>
-                    <source srcset="img/blog3.webp" type="image/webp">
+                    <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
                     <img loading="lazy" src="img/blog3.jpg" alt="imagen blog">
                 </picture>
 
