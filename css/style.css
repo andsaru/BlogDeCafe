@@ -146,13 +146,16 @@ img {
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+    border: none;
 }
 @media (min-width : 768px) {
     .boton {
         display: inline-block;
     }
 }
-
+.boton:hover {
+    cursor: pointer;
+}
 .primary--boton {
     background-color: var(--black);
 }
@@ -240,4 +243,29 @@ img {
     height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.form {
+    background-color: var(--white);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+.field {
+    display: flex;
+    margin-bottom: 2rem;
+}
+.label__label {
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem; /* o usar gap*/
+}
+.label__field {
+    flex: 1;
+    border: 1px solid var(--grey);
+    overflow: auto; /* para que no se salga en dispositivos moviles*/
+}
+
+.label__field--textarea {
+    height: 20rem;
 }
