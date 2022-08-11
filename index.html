@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlogDeCafe</title>
 
-    <!-- Prefetch-->
+    <!-- Prefetch--> <!--Solo a la página que creas que va a ser más visitada después de index-->
     <link rel="prefetch" href="nosotros.html" as="document">
 
     <!-- Preload -->
@@ -53,7 +53,10 @@
             
             <article class="intro">
                 <div class="intro__image">
-                    <img loading="lazy" src="img/blog1.jpg" alt="imagen blog">
+                    <picture>
+                        <source srcset="img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog1.jpg" alt="imagen blog">
+                    </picture>
                 </div>
 
                 <div class="intro__contain">
@@ -67,7 +70,10 @@
 
             <article class="intro">
                 <div class="intro__image">
-                    <img loading="lazy" src="img/blog2.jpg" alt="imagen blog">
+                    <picture>
+                        <source srcset="img/blog2.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog2.jpg" alt="imagen blog">
+                    </picture>
                 </div>
 
                 <div class="intro__contain">
@@ -80,9 +86,10 @@
             </article>
 
             <article class="intro">
-                <div class="intro__image">
+                <picture>
+                    <source srcset="img/blog3.webp" type="image/webp">
                     <img loading="lazy" src="img/blog3.jpg" alt="imagen blog">
-                </div>
+                </picture>
 
                 <div class="intro__contain">
                     <h4 class="no-margin">Beneficios del café</h4>
