@@ -3,6 +3,7 @@
     --fontParagraph: 'Open Sans', sans-serif;
     
     --primary: #784d3c;
+    --grey: #e1e1e1;
     --white: #ffffff;
     --black: #000000;
 }
@@ -120,4 +121,33 @@ img {
         grid-template-columns: 2fr 1fr;
         column-gap: 4rem;
     }
+}
+
+.intro {
+    border-bottom: 1px solid var(--grey);
+    margin-bottom: 2rem;
+}
+.intro:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+.boton {
+    display: block;
+    font-family: var(--fontHeading);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+@media (min-width : 768px) {
+    .boton {
+        display: inline-block;
+    }
+}
+
+.primary--boton {
+    background-color: var(--black);
 }
